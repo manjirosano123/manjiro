@@ -1,0 +1,6 @@
+import numpy as np
+a=np.array([0,4,6])
+print("Vector a ",a)
+b=np.array([[1,2],[4,9],[1,10]])
+print("Matrix b ",b)
+print("Vector matrix multiplication",np.dot(a,b))
