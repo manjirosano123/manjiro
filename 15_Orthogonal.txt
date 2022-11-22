@@ -1,0 +1,11 @@
+import numpy as n
+def oproject(ofvec,onvec):
+    v1=n.array(ofvec)
+    v2=n.array(onvec)
+    scal=(n.dot(v2,v1))/(n.dot(v2,v2))
+    vec=scal*v2
+    return(round(scal,10),n.around(vec,decimals=10))
+print(oproject([4,0],[1,0]))
+print("\n")
+print(oproject([4,0],[8,2]))
+print("\n")
