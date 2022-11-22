@@ -1,0 +1,12 @@
+import numpy as np
+x=np.array([[1,2,3],[4,5,6],[1,1,2]])
+y=np.array([[1,2,3,4],[4,5,6,7],[1,1,2,2]])
+print("X = ",x)
+print("Y = ",y)
+mul=np.array([[0,0,0,0],[0,0,0,0],[0,0,0,0]])
+for i in range(len(x)):
+    for j in range(len(y[0])):
+        for k in range(len(y)):
+            mul[i][j]+=x[i][k]*y[k][j]
+
+print("Multiplication of x and y = ",mul)
